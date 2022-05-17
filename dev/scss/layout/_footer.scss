@@ -1,0 +1,42 @@
+/* =============
+    Footer
+============= */
+
+footer{
+    background-color: #333333;
+
+        ul{
+
+            a:link {
+                color: white; 
+                background-color: transparent; 
+                text-decoration: none;
+              }
+              
+              a:hover {
+                color: $artfulpink;
+                background-color: transparent;
+              }
+              
+              a:active {
+                color: $artfulpink;
+                background-color: transparent;
+              }
+
+            li{
+            list-style: none;
+            text-align: center; 
+            //its not centering?
+
+                @include md{
+                    display: inline;
+                    text-align: center;
+                    float: none;
+                    padding: 16px;
+                    
+                }
+            
+
+        }
+    }
+    }

@@ -1,0 +1,23 @@
+/* =============
+    Buttons
+============= */
+
+button{
+        background-color: $purpletulip;
+        border: none;
+        padding: 16px;
+        margin: 10px;
+        height: 48px;
+        border-radius: 40px;
+        text-align: center;
+        color: white;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $lavender;
+        }
+
+        @include md{
+            height: 90px;
+        }
+}
