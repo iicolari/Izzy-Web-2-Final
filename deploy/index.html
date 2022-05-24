@@ -8,42 +8,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/e4ecdac27c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Starting Template</title>
   </head>
 
   <body>
 
-    <header>
-        <div>
-            <section class="logo">
-                <img src="img/logo/peace-white.svg"/>
-            </section>
+    <main>
 
-            <!-- Mobile Nav Icon, Won't Display on Desktop & Up-->
-            <aside class="burger-container">
-                <button id="burger-btn">
-                    <img src="img/icon/hamburger.svg"/>
-                </button>
-            </aside>
-            
-            <!-- Menu Alters Between Mobile/Tablet & Desktop-->
-            <nav id="main-menu">
-                <aside class="hide-for-lg">
-                   <button id="close-btn">
-                        <img src="img/icon/close.svg"/>
-                   </button> 
+        <header class="container">
+            <div class="content">
+                <section class="icons">
+                    <div class="logos">
+                        <img src="img/logo/peace-white.svg" class="mobile"/>
+                        <img src="img/logo/craigslist-white.svg" class="desktop"/>
+                    </div>
+                    <img src="img/icon/search.svg"/>
+                    <img src="img/icon/avatar.svg"/>
+                </section>
+
+                <!-- Mobile Nav Icon, Won't Display on Desktop & Up-->
+                <aside class="burger-container">
+                    <button id="burger-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </aside>
-                <ul>
-                   <li><a href="#categories">Categories</a></li>
-                   <li><a href="#post">Post</a></li>
-                   <li><a href="#explore">Explore</a></li>
-                   <li><a href="#calendar">Calendar</a></li>
-                   <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                
+                <!-- Menu Alters Between Mobile/Tablet & Desktop-->
+                <nav id="main-menu">
+                    <aside class="hide-for-lg">
+                       <button id="close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                       </button> 
+                    </aside>
+                    <ul>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#post">Post</a></li>
+                        <li><a href="#explore">Explore</a></li>
+                        <li><a href="#calendar">Calendar</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero"></section>
+
+    </main>
 
     <section class="hero">
         <img src="img/hero/city.jpg" alt="city"/>
@@ -53,16 +64,20 @@
         <div class="content">
             <h1>Welcome to the new Craigslist</h1>
             <button input="submit" type="text">Make a Post</button>
-            <h3>Find what you're looking for on the newly reimagined Craigslist</h3>
-            <img src="img/images/map.png" alt="map"/>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-                anim id est laborum.
-            </p>
+            <div class="elements">
+                <img src="img/images/map.png" alt="map"/>
+                <div>
+                    <h3>Find what you're looking for on the newly reimagined Craigslist</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                        anim id est laborum.
+                </div>
+                </p>
+            </div>
         </div>
     </section>
 
@@ -79,17 +94,54 @@
                 <button type="button">Resumes</button>
                 <button type="button">Housing</button>
             </div>
-        <h3>Making connections is easier than ever</h3>
-        <p>Whether its buying and selling goods, renting apartments, or making new friends at publicevents, 
-            its easier than ever to do it on Craigslist. Jump in and meet new people!</p>
-        <img src="img/illustrations/3-people.svg" alt="people illustration"/>
+        <div class="elements">
+            <div>
+                <h3>Making connections is easier than ever</h3>
+                <p>Whether its buying and selling goods, renting apartments, or making new friends at publicevents, 
+                its easier than ever to do it on Craigslist. Jump in and meet new people!</p>
+            </div>
+            <div>
+                <img src="img/illustrations/3-people.svg" alt="people illustration"/>
+            </div>
+        </div>
         </div>
     </section>
 
-    <section class="calendar">
-        <h2>Local Event Calendar</h2>
-        <img src="img/icon/calendar.svg" alt="calendar"/>
-        <!--Add table-->
+    <section class="calendar container">
+        <div class="content">
+            <h2>Local Event Calendar</h2>
+        <div class="elements">
+                <img src="img/illustrations/calendar.svg" alt="calendar"/>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Wine and Dine on Market</td>
+                            <td><a href="#">Add Event</a></td>
+                        </tr>
+                        <tr>
+                            <td>Celebrate Philly</td>
+                            <td><a href="#">Add Event</a></td>
+                        </tr>
+                        <tr>
+                            <td>Puppy Party @PASPCA</td>
+                            <td><a href="#">Add Event</a></td>
+                        </tr>
+                        <tr>
+                            <td>Block Party</td>
+                            <td><a href="#">Add Event</a></td>
+                        </tr>
+                        <tr>
+                            <td>Open House</td>
+                            <td><a href="#">Add Event</a></td>
+                        </tr>
+                        <tr>
+                            <td>Rittenhouse Market</td>
+                            <td><a href="#">Add Event</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
 
     <section class="nearby container">
@@ -105,11 +157,16 @@
                 <button type="button">Delaware</button>
             </div>
                 <!--Pagination-->
-            <h3>Get to know Philly</h3>
-            <p>Whether its buying and selling goods, renting apartments, or making new friends at public events, 
+            <div class="elements">
+                <div>
+                    <h3>Get to know Philly</h3>
+                    <p>Whether its buying and selling goods, renting apartments, or making new friends at public events, 
                 its easier than ever to do it on Craigslist. Jump in and meet new people!</p>
-            <img src="img/illustrations/5-people.svg" alt="people illustration"/>
-        </div>
+                </div>
+                <div>
+                    <img src="img/illustrations/5-people.svg" alt="people illustration"/>
+                </div>
+            </div>
     </section>
 
     <section class="more">

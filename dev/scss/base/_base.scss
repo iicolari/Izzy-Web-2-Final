@@ -10,7 +10,16 @@
     ;
     .content{
         grid-area:content;
+        margin-top: 72px;
     }
 }
 
+.show-menu{
+    display: block !important;
+}
 
+.hide-for-large{
+    @include lg{
+        display: none;
+    }
+}

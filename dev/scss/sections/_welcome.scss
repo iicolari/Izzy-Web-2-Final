@@ -5,8 +5,37 @@
 .welcome{
         text-align: center;
 
-        .img{
-            width: 100%;
+        p{
+            text-align: right;
+        }
+
+        .elements{
+            .img{
+                width: 100%;
+            }
+
+            @include lg{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin-right: 32px;
+                margin-top: 16px;
+            }
+        }
+
+        button{
+            width: 208px;
+
+            @include md{
+                width: 508px;
+            }
+
+            @include lg{
+                width: 826px;
+            }
+
+            @include xl{
+                width: 934px;
+            }
         }
 }
 

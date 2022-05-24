@@ -6,4 +6,10 @@
 .nearby{
     text-align: center;
 
+    .elements{
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
 }

@@ -2,4 +2,51 @@
     Base
 ============= */
 
+.calendar{
+    text-align: center;
+    justify-content: center;
 
+    table{
+        background-color: $lavender;
+        border: 1px solid $lavender;
+        border-radius: 16px;
+        padding: 8px;
+
+        td{
+            text-align: center;
+            padding: 32px;
+        }
+        
+        a{
+           text-decoration: none;
+           color: white;
+           background-color: $punchy;
+           border: 1px solid $punchy;
+           border-radius: 8px;
+           padding: 8px;
+           padding-left: 40px;
+           padding-right: 40px;
+        }
+
+           a:hover{
+               background-color: $lightpurple;
+               border: 1px solid $lightpurple;
+                border-radius: 8px;
+           }
+    }
+
+    @include md{
+        table td a{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+    @include lg{
+        .elements{
+            display: flex;
+            columns: 50%;
+        }
+    }
+            
+    }
+}

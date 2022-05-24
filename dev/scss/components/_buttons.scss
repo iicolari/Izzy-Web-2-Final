@@ -5,8 +5,11 @@
 button{
         background-color: $purpletulip;
         border: none;
-        padding: 16px;
-        margin: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin: 8px;
         height: 48px;
         border-radius: 40px;
         text-align: center;
@@ -15,9 +18,5 @@ button{
         &:hover{
             cursor: pointer;
             background-color: $lavender;
-        }
-
-        @include md{
-            height: 90px;
         }
 }
