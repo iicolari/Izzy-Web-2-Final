@@ -1,0 +1,38 @@
+/* =============
+    Post
+============= */
+
+.post{
+    outline: solid 2px $purpletulip;
+    border-radius: 24px;
+    padding: 24px;
+
+    .content{
+//cannot target only hashtags?
+        a{
+            text-decoration: none;
+                background-color: $blueberrycream;
+                border-radius: 16px;
+                padding: 8px;
+
+                color:white;
+                justify-content: center;
+                align-items: center;
+        }
+
+        .account{
+            display: grid;
+            grid-template-areas: 
+            "b b a"
+            "b b c";
+        }
+
+        ul{
+            list-style: none;
+            display:flex;
+            flex-direction: row;
+            justify-items: center;
+            color: $purplepoke;
+        }
+    }
+}

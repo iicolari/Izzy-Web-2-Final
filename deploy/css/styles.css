@@ -367,7 +367,7 @@ template {
 }
 
 @media (min-width: 992px) {
-  .hide-for-large {
+  .hide-for-lg {
     display: none;
   }
 }
@@ -747,10 +747,86 @@ footer ul li {
     grid-template-columns: 50% 50%;
   }
 }
+.nearby .elements img {
+  width: 100%;
+}
 
 /* =============
     More
 ============= */
 .more {
   text-align: center;
+}
+
+/* =============
+    Post
+============= */
+.post {
+  outline: solid 2px #5012B5;
+  border-radius: 24px;
+  padding: 24px;
+}
+.post .content a {
+  text-decoration: none;
+  background-color: #A6B1E1;
+  border-radius: 16px;
+  padding: 8px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.post .content .account {
+  display: grid;
+  grid-template-areas: "b b a" "b b c";
+}
+.post .content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  color: #7B62CB;
+}
+
+/* =============
+    Image
+============= */
+.img {
+  width: 100%;
+}
+
+/* =============
+    Location
+============= */
+.location img {
+  display: none;
+}
+.location mobile {
+  display: flex;
+  width: 100%;
+}
+.location mobile p {
+  color: #F61067;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .location img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+  }
+  .location mobile {
+    display: none;
+  }
+}
+
+/* =============
+    Pagination
+============= */
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pagination img {
+  width: 100%;
 }
