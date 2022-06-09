@@ -9,31 +9,45 @@
     margin: 16px;
 
     .content{
-//cannot target only hashtags?
+
+        .account{
+            display: flex;
+
+            img{
+                margin-right: 16px;
+                width: 8%;
+            }
+        }
+
+        .hashtags{
         a{
             text-decoration: none;
                 background-color: $blueberrycream;
-                border-radius: 16px;
-                padding: 8px;
+                border-radius: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                padding-right: 16px;
 
                 color:white;
                 justify-content: center;
                 align-items: center;
         }
+    }
 
-        .account{
-            display: grid;
-            grid-template-areas: 
-            "b b a"
-            "b b c";
-        }
-
+    .links{
         ul{
             list-style: none;
             display:flex;
             flex-direction: row;
-            justify-items: center;
-            color: $purplepoke;
+            justify-content: space-between;
         }
+
+        a{
+            text-decoration: none;
+            color: $eggplant;
+        }
+    }
+        
     }
 }

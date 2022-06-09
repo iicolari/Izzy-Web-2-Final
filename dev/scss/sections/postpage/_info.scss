@@ -1,0 +1,51 @@
+/* =============
+    Info
+============= */
+
+.info{
+    .content{
+        text-align: center;
+
+        .user-image{
+            img{
+                width: 100%;
+            }
+        }
+
+            .mobile{
+                justify-content: center;
+                a{
+                    color: $artfulpink;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                @include md{
+                    display: none;
+                }
+            }
+
+            .tablet{
+                display: none;
+
+                img{
+                    width: 100%;
+                }
+
+                @include md{
+                    display: block;
+                }
+            }
+            
+
+        p{
+            color: $blueberrycream;
+            text-align: center;
+        }
+
+    }
+}
+
+
+

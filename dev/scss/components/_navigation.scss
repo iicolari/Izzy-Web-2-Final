@@ -6,7 +6,7 @@ nav {
 	// this makes the nav not show up on the mobile sizes
     display: none;
 	background-color: #333333;
-	height: 100vh;
+	height: 10vh;
 	padding: 16px;
 	position: absolute;
 	right: 0;
@@ -17,7 +17,7 @@ nav {
 		display: block;
 		height: 100%;
 		padding: 0;
-
+		position: relative;
 		width: 100%;
 	}
 	aside {
@@ -48,7 +48,7 @@ nav {
 			margin-bottom: 24px;
 			text-align: right;
 			@include lg {
-				border-left: 1px solid black;
+				border-left: 1px solid white;
 				margin-bottom: 0;
 				margin-left: 16px;
 				padding-left: 24px;
@@ -61,11 +61,11 @@ nav {
 				text-decoration: none;
 				transition: 0.25s;
 				@include lg {
-					color: black;
+					color: white;
 				}
 				&:hover,
                 &:active {
-					color: black;
+					color: white;
 				}
 			}
 			&:first-child {
